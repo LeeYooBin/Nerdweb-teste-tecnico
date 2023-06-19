@@ -1,0 +1,122 @@
+.header__hamburger-menu {
+  width: 1.8rem;
+  height: 1.2rem;
+  margin-left: 2rem;
+  position: relative;
+  z-index: 20;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 0.23rem;
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+.hamburger-line-open:nth-child(1) {
+  transform: rotate(45deg) translate(6px, -7px);
+  background-color: var(--white);
+}
+
+.hamburger-line-open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-line-open:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, 7px);
+  background-color: var(--white);
+}
+
+.header__mobile-menu {
+  display: none;
+}
+
+.header__menu-open {
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-charcoal);
+  padding: 1.3rem 3.7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu__logo {
+  width: 10.5rem;
+  height: 4.008rem;
+}
+
+.header__mobile-upper-menu, .header__mobile-lower-menu {
+  margin: 4.192rem 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-upper-menu__item, .mobile-lower-menu__item {
+  text-decoration: none;
+}
+
+.mobile-upper-menu__item {
+  font: normal normal bold 1.5rem/1.8rem ArcherPro;
+  color: var(--white);
+}
+
+.mobile-lower-menu__item {
+  font: normal normal bold 1.4rem/1.6rem ArcherPro;
+  color: var(--sky-blue);
+}
+
+.mobile-lower-menu__button {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.caret-icon {
+  margin-left: 0.5rem;
+  color: var(--sky-blue);
+}
+
+.mobile-lower-sub-menu {
+  display: none;
+}
+
+.mobile-lower-sub-menu-active {
+  margin: 2.4rem 0;
+  padding: 3.2rem 2.8rem;
+  background-color: var(--deep-forest-green);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2.7rem;
+}
+
+.mobile-lower-sub-menu__item {
+  text-decoration: none;
+  font: normal normal 800 1.2rem/1.8rem Sora;
+  color: var(--white);
+}
+
+.mobile-lower-menu__item-open {
+  color: var(--white);
+}
+
+@media screen and (min-width: 920px) {
+  .header__hamburger-menu, .header__mobile-menu {
+    display: none;
+  }
+}

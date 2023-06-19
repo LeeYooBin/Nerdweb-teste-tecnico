@@ -1,0 +1,118 @@
+.service-selection {
+  padding: 3rem 3.7rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-selection__sub-title {
+  font: normal normal 900 1.9rem/2.3rem Roboto Slab;
+  color: var(--dark-blue);
+}
+
+.service-selection__sub-title-2 {
+  font: normal normal 900 1.4rem/1.6rem Roboto Slab;
+  color: var(--aqua-blue);
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.service-selection__services-container {
+  width: 100%;
+  height: 43rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: scroll;
+}
+
+.service-selection__services-container::-webkit-scrollbar {
+  height: 0.7rem;
+}
+
+.service-selection__services-container::-webkit-scrollbar-thumb {
+  background-color: var(--ocean-blue);
+}
+
+.service-selection__service-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.service-selection__service-image,
+.service-selection__service-resume {
+  width: 31.64rem;
+}
+
+.service-selection__service-resume {
+  padding: 3.2rem 2rem;
+  height: 18.5rem;
+  text-align: left;
+  background-color: var(--deep-forest-green);
+}
+
+.service-selection__service-name {
+  font: normal normal 900 1.6rem/2.1rem Roboto Slab;
+  color: var(--white);
+}
+
+.service-selection__service-description {
+  font: normal normal 300 1.2rem/1.6rem Roboto Slab;
+  color: var(--pale-ice-blue);
+  margin: 1.2rem 0 2.4rem 0;
+  opacity: 0.6;
+}
+
+.service-selection__service-link {
+  text-decoration: none;
+  font: normal normal 900 1.2rem/1.6rem Roboto Slab;
+  color: var(--aqua-blue);
+}
+
+@media screen and (min-width: 920px) {
+  .service-selection {
+    padding: 4rem 22rem;
+  }
+  
+  .service-selection__sub-title {
+    font: normal normal 900 3.2rem/3.8rem Roboto Slab;
+  }
+
+  .service-selection__sub-title-2 {
+    font: normal normal 900 2rem/2.6rem Roboto Slab;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .service-selection__services-container {
+    gap: 0;
+    justify-content: space-between;
+    height: 51rem;
+    overflow: hidden;
+  }
+
+  .service-selection__service-name {
+    font: normal normal 900 1.8rem/2.3rem Roboto Slab;
+  }
+
+  .service-selection__service-description {
+    font: normal normal 300 1.4rem/1.8rem Roboto Slab;
+    margin: 1.6rem 0 4rem 0;
+  }
+
+  .service-selection__service-link {
+    font: normal normal 900 1.4rem/1.6rem Roboto Slab;
+  }
+
+  .service-selection__service-image,
+  .service-selection__service-resume {
+    width: 35rem;
+  }
+
+  .service-selection__service-resume {
+    padding: 2.4rem 3.6rem;
+    height: 21.3rem;
+  }
+}

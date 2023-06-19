@@ -1,0 +1,165 @@
+.about {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__upper-container {
+  width: 100%;
+  height: auto;
+  padding: 4rem 5.5rem;
+  background: url(../../assets/images/mobile-BGCONHEÇA@2x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about__upper-container-title {
+  font: normal normal 900 2.1rem/2.5rem Roboto Slab;
+  color: var(--white);
+}
+
+.about__upper-container-text {
+  font: normal normal bold 1.4rem/1.8rem Roboto Slab;
+  color: var(--pale-cyan);
+  margin-top: 1.5rem;
+  margin-bottom: 3.2rem;
+}
+
+.about__upper-container-button {
+  padding: .8rem 4rem;
+  border: none;
+  background-color: var(--ocean-blue);
+  color: var(--white);
+  font: normal normal 900 1.7rem/2.3rem Roboto Slab;
+  cursor: pointer;
+}
+
+.about__curly {
+  width: 28.6rem;
+  height: 1.5rem;
+  margin: 3.2rem 0;
+}
+
+.about__lower-container {
+  width: 100%;
+  height: auto;
+  padding: 0 3.7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__lower-container-text {
+  text-align: left;
+}
+
+.about__lower-container-main-text,
+.about__lower-container-sec-text {
+  color: var(--dark-green);
+}
+
+.about__lower-container-main-text {
+  font: normal normal 900 1.8rem/2.3rem Roboto Slab;
+  margin-bottom: 1.5rem;
+}
+
+.about__lower-container-sec-text {
+  font: normal normal 300 1.3rem/2.1rem Roboto Slab;
+  margin-bottom: 2.4rem;
+}
+
+.about__lower-container-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__lower-container-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.not-mobile-curly {
+  display: none;
+}
+
+@media screen and (min-width: 920px) {
+  .about__mobile-curly {
+    display: none;
+  }
+
+  .not-mobile-curly {
+    display: block;
+  }
+  
+  .about {
+    padding: 3rem 22rem;
+  }
+
+  .about__upper-container {
+    height: 40rem;
+    padding: 7.1rem 45rem 10rem 11.2rem;
+    background: url(../../assets/images/BGCONHEÇA@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about__upper-container-title {
+    font: normal normal 900 3.2rem/3.8rem Roboto Slab;
+  }
+
+  .about__upper-container-text {
+    font: normal normal bold 1.8rem/2.4rem Roboto Slab;
+    margin-top: 1.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .about__upper-container-button {
+    padding: .8rem 3.5rem;
+  }
+
+  .about__curly {
+    width: 100%;
+    height: 100%;
+    margin-top: 7rem;
+    margin-bottom: 2.841rem;
+  }
+
+  .about__lower-container {
+    flex-direction: row;
+  }
+
+  .about__lower-container-text {
+    width: 50%;
+    padding: 0 3rem;
+  }
+
+  .about__lower-container-main-text {
+    font: normal normal 900 1.35rem/1.75rem Roboto Slab;
+    line-height: 2rem;
+  }
+
+  .about__lower-container-sec-text {
+    font: normal normal 300 1.2rem/1.5rem Roboto Slab;
+    margin-top: 2.5rem;
+    line-height: 2rem;
+  }
+
+  .about__lower-container-images {
+    width: 50%;
+    align-items: center;
+  }
+
+  .about__lower-container-image {
+    width: 16rem;
+    height: 16rem;
+  }
+}

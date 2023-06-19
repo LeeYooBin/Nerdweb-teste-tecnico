@@ -1,0 +1,34 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --dark-green: #2C3A2F;
+  --dark-blue: #033244;
+  --dark-charcoal: #39393B;
+  --aqua-blue: #00AEEF;
+  --pale-cyan: #71D8FF;
+  --light-cyan: #B2EAFF;
+  --sky-blue: #5EB7F2;
+  --ocean-blue: #0089BC;
+  --deep-teal: #005271;
+  --midnight-green: #101912;
+  --deep-forest-green: #283137;
+  --pale-ice-blue: #E2F7FF;
+  --light-gray: #E1E1E1;
+  --pale-silver: #F3F3F3;
+  --medium-gray: #676767;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+}
+
+.no-overflow {
+  overflow: hidden;
+}

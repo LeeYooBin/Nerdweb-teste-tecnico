@@ -1,0 +1,226 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  position: relative;
+}
+
+.header__upper-container {
+  width: 100%;
+  height: 4.6rem;
+  padding: 0 3.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 10.48rem;
+  height: 2rem;
+}
+
+.header__upper-right-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__icons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__upper-menu, .header__day-by-day-button, .header__lower-container, .header__lower-sub-menu-container {
+  display: none;
+}
+
+@media screen and (min-width: 920px) {
+  .header__upper-container, .header__lower-container {
+    padding: 0 22rem;
+  }
+
+  .header__upper-container {
+    height: 6.2rem;
+  }
+
+  .header__upper-left-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .header__upper-menu, .header__lower-menu {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__upper-menu {
+    margin-left: 5.9rem;
+  }
+
+  .upper-menu__item {
+    text-decoration: none;
+    font: normal normal normal 1.4rem/1.6rem ArcherPro;
+    color: #2C3A2F;
+    opacity: 0.5;
+  }
+
+  .header__day-by-day-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-right: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .day-by-day-text {
+    font: normal normal bold 1.2rem/1.5rem ArcherPro;
+    color: var(--black);
+  }
+
+  .lower-menu-caret-icon, .caret-icon-black {
+    margin-left: 0.5rem;
+  }
+
+  .lower-menu-caret-icon {
+    color: var(--white);
+  }
+
+  .caret-icon-black {
+    color: var(--black);
+  }
+
+  .header__lower-container {
+    width: 100%;
+    height: 7.2rem;
+    background-color: var(--dark-blue);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .lower-menu__button {
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .lower-menu__item {
+    text-decoration: none;
+    font: normal normal normal 1.4rem/1.6rem ArcherPro;
+    color: var(--white);
+  }
+
+  .header__search-bar {
+    position: relative;
+    width: auto;
+  }
+
+  .header__lower-menu {
+    margin-right: 23rem;
+  }
+
+  .header__search-input {
+    padding: 1.2rem 3.7rem 1.2rem 1.5rem;
+    width: 23.8rem;
+    height: 4rem;
+    outline: none;
+    border: 1px solid var(--aqua-blue);
+    border-radius: 5px;
+    background: var(--dark-blue);
+    color: var(--light-cyan);
+    font: normal normal normal 1.4rem/1.6rem ArcherPro;
+  }
+
+  .header__search-input::-webkit-input-placeholder {
+    color: var(--light-cyan);
+    opacity: 0.4;
+  } 
+
+  .search-icon-button {
+    position: absolute;
+    top: 25%; 
+    right: 5%;
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .search-icon {
+    font-size: 2rem;
+    color: var(--white);
+  }
+
+  .header__lower-sub-menu-container-active {
+    width: calc(100% - 44rem);
+    min-height: 27.9rem;
+    padding: 3.2rem 16.1rem;
+    background: var(--white);
+    box-shadow: 2rem 3rem 6rem #00000014;
+    border-top: 0.4rem solid var(--sky-blue);
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 22rem;
+  }
+
+  .header__lower-sub-menu, .lower-sub-menu-item__list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lower-sub-menu-item__list {
+    flex-direction: column;
+    gap: .8rem;
+  }
+
+  .lower-sub-menu-item__line {
+    width: 6rem;
+    opacity: 0.5;
+    margin: 1rem 0;
+  }
+
+  .lower-sub-menu-item__title {
+    font: normal normal 800 1.8rem/2.4rem Sora;
+    color: var(--deep-teal);
+    max-width: 14rem;
+  }
+
+  .lower-sub-menu-item__item {
+    text-decoration: none;
+    font: normal normal normal 1.4rem/1.8rem Sora;
+    color: var(--dark-charcoal);
+    opacity: 0.8;
+  }
+
+  .lower-sub-menu-item__item-bold {
+    font-weight: bold;
+    color: var(--dark-blue);
+  }
+}

@@ -1,0 +1,179 @@
+.services {
+  position: relative;
+  padding: 2.4rem 3.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__sub-title {
+  font: normal normal 900 2.1rem/2.5rem Roboto Slab;
+  color: var(--dark-blue);
+  text-align: center;
+  width: 95%;
+}
+
+.services__sub-title-span {
+  color: var(--aqua-blue);
+}
+
+.services__curly {
+  width: 18rem;
+  margin: 1.6rem 0 2.4rem 0;
+}
+
+.services__button {
+  margin: 3rem 0;
+  padding: 0.8rem 4rem;
+  background-color: var(--pale-cyan);
+  color: var(--dark-blue);
+  font: normal normal 900 1.7rem/2.3rem Roboto Slab;
+  border: none;
+  cursor: pointer;
+}
+
+.service__card {
+  padding: 1.5rem;
+  margin: 0 3.3rem;
+  height: 21.9rem;
+  width: 18.9rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 3px 10px #00000014;
+}
+
+.service__card-icon {
+  width: 10rem;
+  height: 10rem;
+}
+
+.service__card-title, .service__card-text {
+  color: var(--midnight-green);
+}
+
+.service__card-title {
+  font: normal normal 900 1.6rem/2.1rem Roboto Slab;
+  margin: 1rem 0;
+}
+
+.service__card-text {
+  font: normal normal bold 1.2rem/1.6rem Roboto Slab;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 2.4rem;
+  height: 2.4rem;
+  --swiper-navigation-size: .659rem/1.117rem;
+  --swiper-navigation-color: var(--deep-teal);
+  background-color: var(--light-gray);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  height: 23rem;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services___button-not-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 920px) {
+  .services___button-mobile {
+    display: none;
+  }
+
+  .services {
+    flex-direction: row;
+    padding: 7rem 22rem;
+    gap: 0;
+  }
+
+  .services__title-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .services___button-not-mobile {
+    display: block;
+    margin: 4rem 0;
+    padding: 0.8rem 3.7rem;
+    width: 55%;
+  }
+
+  .services__left-container {
+    flex-direction: row;
+    width: 40%;
+  }
+
+  .services__sub-title {
+    text-align: start;
+    font: normal normal 900 3.2rem/3.8rem Roboto Slab;
+    width: 31.2rem;
+  }
+
+  .services__curly {
+    margin: -12rem;
+    transform: rotate(-90deg);
+    width: 31.6rem;
+    height: 1.488rem ;
+  }
+
+  .swiper {
+    height: 40rem;
+  }
+
+  .swiper-wrapper {
+    margin-top: 4rem;
+  }
+
+  .service__card {
+    height: 30rem;
+    padding: 1.5rem;
+  }
+
+  .service__card-icon {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .service__card-text {
+    font: normal normal bold 1.3rem/1.8rem Roboto Slab;
+  }
+
+  .swiper-slide {
+    height: 31rem;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    --swiper-navigation-top-offset: 0%;
+  }
+  
+  .swiper-button-next {
+    --swiper-navigation-sides-offset: 85%;
+  }
+
+  .swiper-button-prev {
+    --swiper-navigation-sides-offset: 7%;
+  }
+}

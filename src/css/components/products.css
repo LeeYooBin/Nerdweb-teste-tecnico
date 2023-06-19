@@ -1,0 +1,96 @@
+.products {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__sub-title {
+  font: normal normal 900 2.1rem/2.5rem Roboto Slab;
+  color: var(--dark-blue);
+  text-align: center;
+  width: 60%;
+}
+
+.products__sub-title-span {
+  color: var(--aqua-blue);
+}
+
+.products__products-container {
+  margin-top: 1.6rem;
+  margin-left: 3.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 17.9rem;
+  gap: 2rem;
+  overflow-x: scroll;
+}
+
+.products__products-container::-webkit-scrollbar {
+  height: 0.7rem;
+}
+
+.products__products-container::-webkit-scrollbar-thumb {
+  background-color: var(--ocean-blue);
+}
+
+.products__product-card {
+  width: auto;
+  height: auto;
+  padding: 1.5rem 1.2rem;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__product-card-image {
+  width: 11rem;
+  height: 8.067rem;
+}
+
+.products__product-card-title {
+  font: normal normal medium 1.4rem/1.9rem Roboto Slab;
+  color: var(--medium-gray);
+  margin-top: 1.333rem;
+}
+
+.products__button {
+  padding: .8rem 4rem;
+  margin: 3rem 0;
+  border: none;
+  background-color: var(--pale-cyan);
+  color: var(--dark-blue);
+  font: normal normal 900 1.7rem/2.3rem Roboto Slab;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 920px) {
+  .products {
+    padding: 1rem 22rem;
+  }
+  
+  .products__sub-title {
+    font: normal normal 900 3.2rem/3.8rem Roboto Slab;
+  }
+
+  .products__products-container {
+    margin-left: 0;
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  .products__button {
+    padding: .8rem 2.5rem;
+    margin: 4rem 0;
+  }
+
+  .products__products-container {
+    background-color: var(--pale-silver);
+    padding: 0 2.6rem;
+  }
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nerdweb</title>
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/components/header.css">
+  <link rel="stylesheet" href="src/css/components/banner.css">
+  <link rel="stylesheet" href="src/css/components/hamburger-menu.css">
+  <link rel="stylesheet" href="src/css/components/services.css">
+  <link rel="stylesheet" href="src/css/components/products.css">
+  <link rel="stylesheet" href="src/css/components/join-us.css">
+  <link rel="stylesheet" href="src/css/components/service-selection.css">
+  <link rel="stylesheet" href="src/css/components/about.css">
+  <link rel="stylesheet" href="src/css/components/register.css">
+  <link rel="stylesheet" href="src/css/components/footer.css">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/archer-book">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="src/css/components/services.css">
+</head>
+<body>
+  <header class="header">
+      <div class="header__upper-container">
+        <div class="header__upper-left-container">
+          <a href="#">
+            <img src="./src/assets/images/logo@2x.png" alt="Logo da empresa" class="header__logo">
+          </a>
+          <ul class="header__upper-menu">
+            <li><a href="#" class="upper-menu__item">NERDWEB</a></li>
+            <li><a href="#" class="upper-menu__item">SERVIÇOS</a></li>
+            <li><a href="#" class="upper-menu__item">BLOG</a></li>
+            <li><a href="#" class="upper-menu__item">ATENDIMENTO</a></li>
+          </ul>
+        </div>
+        <div class="header__upper-right-container">
+          <button class="header__day-by-day-button">
+            <p class="day-by-day-text">DIA A DIA</p>
+            <i class="fa-solid fa-caret-down caret-icon-black"></i>
+          </button>
+          <div class="header__icons">
+            <a href="#">
+              <img src="./src/assets/images/account_circle_black_24dp.svg" alt="Ícone de Conta" class="header__icon">
+            </a>
+            <a href="#">
+              <img src="./src/assets/images/shopping_cart_black_24dp.svg" alt="Ícone de Carrinho" class="header__icon">
+            </a>
+          </div>
+          <button class="header__hamburger-menu">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+          </button>
+          <nav class="header__mobile-menu">
+            <img src="./src/assets/images/logo_2@2x.png" alt="Logo da empresa" class="mobile-menu__logo">
+            <ul class="header__mobile-upper-menu">
+              <li><a href="#" class="mobile-upper-menu__item">NERDWEB</a></li>
+              <li><a href="#" class="mobile-upper-menu__item">SERVIÇOS</a></li>
+              <li><a href="#" class="mobile-upper-menu__item">BLOG</a></li>
+              <li><a href="#" class="mobile-upper-menu__item">ATENDIMENTO</a></li>
+            </ul>
+            <hr>
+            <ul class="header__mobile-lower-menu">
+              <li>
+                <button class="mobile-lower-menu__button">
+                  <p class="mobile-lower-menu__item mobile-lower-button">SITES</p> 
+                  <i class="fa-solid fa-caret-down caret-icon"></i>
+                </button>
+                <ul class="mobile-lower-sub-menu">
+                  <li><a href="#" class="mobile-lower-sub-menu__item">Soluções Site</a></li>
+                  <li><a href="#" class="mobile-lower-sub-menu__item">Soluções por E-commerce</a></li>
+                  <li><a href="#" class="mobile-lower-sub-menu__item">Soluções por Redes Sociais</a></li>
+                  <li><a href="#" class="mobile-lower-sub-menu__item">Soluções por Landing Page</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="mobile-lower-menu__item">REDES SOCIAIS</a></li>
+              <li><a href="#" class="mobile-lower-menu__item">E-COMMERCE</a></li>
+              <li><a href="#" class="mobile-lower-menu__item">MÍDIA ONLINE</a></li>
+              <li><a href="#" class="mobile-lower-menu__item">LANDING PAGES</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__lower-container">
+        <ul class="header__lower-menu">
+          <button class="lower-menu__button">
+            <p class="lower-menu__item">SITES</p> 
+            <i class="fa-solid fa-caret-down lower-menu-caret-icon"></i>
+          </button>
+          <li><a href="#" class="lower-menu__item">REDES SOCIAIS</a></li>
+          <li><a href="#" class="lower-menu__item">E-COMMERCE</a></li>
+          <li><a href="#" class="lower-menu__item">MÍDIA ONLINE</a></li>
+          <li><a href="#" class="lower-menu__item">LANDING PAGES</a></li>
+        </ul>
+        <label class="header__search-bar">
+          <input type="text" placeholder="Digite sua pesquisa" class="header__search-input">
+          <button class="search-icon-button">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </button>
+        </label>
+      </div>
+      <nav class="header__lower-sub-menu-container">
+        <ul class="header__lower-sub-menu">
+          <li class="header__lower-sub-menu-item">
+            <h2 class="lower-sub-menu-item__title">Soluções por Site</h2>
+            <hr class="lower-sub-menu-item__line">
+            <ul class="lower-sub-menu-item__list">
+              <li><a href="#" class="lower-sub-menu-item__item lower-sub-menu-item__item-bold">Briefing</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item lower-sub-menu-item__item-bold">Pesquisa</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item lower-sub-menu-item__item-bold">Criação</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item lower-sub-menu-item__item-bold">Veiculação</a></li>
+            </ul>
+          </li>
+          <li class="header__lower-sub-menu-item">
+            <h2 class="lower-sub-menu-item__title">Soluções por E-commerce</h2>
+            <hr class="lower-sub-menu-item__line">
+            <ul class="lower-sub-menu-item__list">
+              <li><a href="#" class="lower-sub-menu-item__item">Lorem</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item">Ipsum</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item">Dolor</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item">Google ads</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item">Análise de mercado</a></li>
+            </ul>
+          </li>
+          <li class="header__lower-sub-menu-item">
+            <h2 class="lower-sub-menu-item__title">Soluções por Redes Sociais</h2>
+            <hr class="lower-sub-menu-item__line">
+            <ul class="lower-sub-menu-item__list">
+              <li><a href="#" class="lower-sub-menu-item__item">Briefing</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item">Pesquisa</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item">Criação</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item">Veiculação</a></li>
+            </ul>
+          </li>
+          <li class="header__lower-sub-menu-item">
+            <h2 class="lower-sub-menu-item__title">Soluções por Landing Page</h2>
+            <hr class="lower-sub-menu-item__line">
+            <ul class="lower-sub-menu-item__list">
+              <li><a href="#" class="lower-sub-menu-item__item">Conteúdo</a></li>
+              <li><a href="#" class="lower-sub-menu-item__item">Relatórios</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <main class="banner"></main>
+  <section class="services">
+    <div class="services__left-container">
+      <div class="services__title-container">
+        <h2 class="services__sub-title">
+          Descubra os serviços Nerdweb
+          <span class="services__sub-title-span">que mais combinam com a sua empresa</span>
+        </h2>
+        <button class="services__button services___button-not-mobile">Ver preços</button>
+      </div>
+      <img src="./src/assets/images/curly.png" alt="Curly" class="services__curly">
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="service__card">
+            <img src="./src/assets/images/alt_route_black_24dp.svg" alt="All route" class="service__card-icon">
+            <h2 class="service__card-title">Título</h2>
+            <p class="service__card-text">Dolor sit amet, consetetur sadipscing elitr, sed</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="service__card">
+            <img src="./src/assets/images/headset_mic_black_24dp.svg" alt="Headset mic" class="service__card-icon">
+            <h2 class="service__card-title">Serviço</h2>
+            <p class="service__card-text">Lorem ipsum dolor sit amet, consetetur sadipscing</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="service__card">
+            <img src="./src/assets/images/inventory_black_24dp.svg" alt="Inventory black" class="service__card-icon">
+            <h2 class="service__card-title">Exemplo</h2>
+            <p class="service__card-text">Ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <button class="services__button services___button-mobile">Ver preços</button>
+  </section>
+  <section class="products">
+    <h2 class="products__sub-title">
+      Conheça todos <span class="products__sub-title-span">produtos Nerdweb</span>
+    </h2>
+    <div class="products__products-container">
+      <div class="products__product-card">
+        <img src="./src/assets/images/LAPTOP@2x.png" alt="Laptop" class="products__product-card-image">
+        <h2 class="products__product-card-title">SITES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/PHONE@2x.png" alt="Telefone" class="products__product-card-image">
+        <h2 class="products__product-card-title">E-COMMERCE</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/SHOP@2x.png" alt="Shop" class="products__product-card-image">
+        <h2 class="products__product-card-title">REDES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/LAPTOP@2x.png" alt="Laptop" class="products__product-card-image">
+        <h2 class="products__product-card-title">SITES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/PHONE@2x.png" alt="Telefone" class="products__product-card-image">
+        <h2 class="products__product-card-title">E-COMMERCE</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/SHOP@2x.png" alt="Shop" class="products__product-card-image">
+        <h2 class="products__product-card-title">REDES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/LAPTOP@2x.png" alt="Laptop" class="products__product-card-image">
+        <h2 class="products__product-card-title">SITES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/PHONE@2x.png" alt="Telefone" class="products__product-card-image">
+        <h2 class="products__product-card-title">E-COMMERCE</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/SHOP@2x.png" alt="Shop" class="products__product-card-image">
+        <h2 class="products__product-card-title">REDES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/LAPTOP@2x.png" alt="Laptop" class="products__product-card-image">
+        <h2 class="products__product-card-title">SITES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/PHONE@2x.png" alt="Telefone" class="products__product-card-image">
+        <h2 class="products__product-card-title">E-COMMERCE</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/SHOP@2x.png" alt="Shop" class="products__product-card-image">
+        <h2 class="products__product-card-title">REDES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/LAPTOP@2x.png" alt="Laptop" class="products__product-card-image">
+        <h2 class="products__product-card-title">SITES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/PHONE@2x.png" alt="Telefone" class="products__product-card-image">
+        <h2 class="products__product-card-title">E-COMMERCE</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/SHOP@2x.png" alt="Shop" class="products__product-card-image">
+        <h2 class="products__product-card-title">REDES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/LAPTOP@2x.png" alt="Laptop" class="products__product-card-image">
+        <h2 class="products__product-card-title">SITES</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/PHONE@2x.png" alt="Telefone" class="products__product-card-image">
+        <h2 class="products__product-card-title">E-COMMERCE</h2>
+      </div>
+      <div class="products__product-card">
+        <img src="./src/assets/images/SHOP@2x.png" alt="Shop" class="products__product-card-image">
+        <h2 class="products__product-card-title">REDES</h2>
+      </div>
+    </div>
+    <button class="products__button">Ver todos os produtos</button>
+  </section>
+  <section class="join-us">
+    <div class="join-us__container">
+      <h2 class="join-us__sub-title">Faça parte do nosso time de nerds</h2>
+      <p class="join-us__text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+        ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      </p>
+      <div class="join-us__button">Cadastre-se</div>
+    </div>
+  </section>
+  <section class="service-selection">
+    <h2 class="service-selection__sub-title">Seleção de Serviços</h2>
+    <h3 class="service-selection__sub-title-2">Conheça nossa seleção especial</h3>
+    <div class="service-selection__services-container">
+      <div class="service-selection__service-wrapper">
+        <img src="./src/assets/images/Imagem-card-serviço@2x.png" alt="Serviço 1" class="service-selection__service-image">
+        <article class="service-selection__service-resume">
+          <h2 class="service-selection__service-name">Serviço de teste de front-end</h2>
+          <p class="service-selection__service-description">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+          </p>
+          <a href="#" class="service-selection__service-link">CONHECER</a>
+        </article>
+      </div>
+      <div class="service-selection__service-wrapper">
+        <img src="./src/assets/images/Imagem-card-serviço-1@2x.png" alt="Serviço 2" class="service-selection__service-image">
+        <article class="service-selection__service-resume">
+          <h2 class="service-selection__service-name">Serviço de teste de front-end</h2>
+          <p class="service-selection__service-description">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+          </p>
+          <a href="#" class="service-selection__service-link">CONHECER</a>
+        </article>
+      </div>
+      <div class="service-selection__service-wrapper">
+        <img src="./src/assets/images/Imagem-card-serviço-2@2x.png" alt="Serviço 3" class="service-selection__service-image">
+        <article class="service-selection__service-resume">
+          <h2 class="service-selection__service-name">Serviço de teste de front-end</h2>
+          <p class="service-selection__service-description">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+          </p>
+          <a href="#" class="service-selection__service-link">CONHECER</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about__upper-container">
+      <h2 class="about__upper-container-title">Conheça a visão Nerdweb e entenda nossa história</h2>
+      <p class="about__upper-container-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+      <button class="about__upper-container-button">IR PARA SOBRE</button>
+    </div>
+    <img src="./src/assets/images/curly-2.png" alt="Curly" class="about__curly not-mobile-curly">
+    <img src="./src/assets/images/mobile-curly.png" alt="Curly" class="about__curly about__mobile-curly ">
+    <div class="about__lower-container">
+      <article class="about__lower-container-text">
+        <p class="about__lower-container-main-text">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        </p>
+        <p class="about__lower-container-sec-text">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+          sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+          magna aliquyam erat, sed diam voluptua.<b> At vero eos et accusam 
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren,</b> 
+          no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+          ipsum dolor sit amet, consetetur <b>sadipscing elitr, sed diam nonumy 
+          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+          sed diam</b> voluptua. At vero eos et accusam et.
+        </p>
+      </article>
+      <div class="about__lower-container-images">
+        <img src="./src/assets/images/selo-wgc@2x.png" alt="Selo Grãos Integrais" class="about__lower-container-image">
+        <img src="./src/assets/images/principle-2@2x.png" alt="Certificado Produto Vegano" class="about__lower-container-image">
+        <img src="./src/assets/images/principle-3@2x.png" alt="Selo Produto Orgânico" class="about__lower-container-image">
+      </div>
+    </div>
+  </section>
+  <section class="register">
+    <form class="register__form">
+      <article class="register__text-container">
+        <h2 class="register__sub-title">Novidades e descontos especiais</h2>
+        <p class="register__text">Descubra com a gente uma vida nova, saudável, cheia de sabor e desconto!</p>
+      </article>
+      <div class="register__form-container">
+        <div class="register__inputs">
+          <input type="text" placeholder="Nome" class="register__input">
+          <input type="email" placeholder="E-mail" class="register__input">
+        </div>
+        <button type="submit" class="register__button">Cadastrar</button>
+      </div>
+    </form>
+  </section>
+  <footer class="footer">
+    <div class="footer__upper-container">
+      <img src="./src/assets/images/logo_2@2x.png" alt="Logo da empresa" class="footer__logo">
+      <nav class="footer__help-lists">
+        <ul class="footer__help-list">
+          <h2 class="footer__help-list-title">NERDWEB</h2>
+          <li><a href="#" class="footer__help-list-item">Sobre</a></li>
+          <li><a href="#" class="footer__help-list-item">Nossos Princípios</a></li>
+          <li><a href="#" class="footer__help-list-item">Funcionários</a></li>
+          <li><a href="#" class="footer__help-list-item">Trabalhe Conosco</a></li>
+        </ul>
+        <ul class="footer__help-list">
+          <h2 class="footer__help-list-title">AJUDA</h2>
+          <li><a href="#" class="footer__help-list-item">Prazos e Entregas</a></li>
+          <li><a href="#" class="footer__help-list-item">Troca e Devoluções</a></li>
+          <li><a href="#" class="footer__help-list-item">Políticas de Privacidade</a></li>
+        </ul>
+        <ul class="footer__help-list">
+          <h2 class="footer__help-list-title">ATENDIMENTO</h2>
+          <li><a href="#" class="footer__help-list-item">Dúvidas Frequentes</a></li>
+          <li><a href="#" class="footer__help-list-item">(41) 3333-3333</a></li>
+          <li><a href="#" class="footer__help-list-item">teste@nerdweb.com.br</a></li>
+        </ul>
+        <ul class="footer__help-list">
+          <h2 class="footer__help-list-title">HORÁRIO DE ATENDIMENTO</h2>
+          <li class="footer__help-list-item footer__help-list-item-highlighted">De segunda a sexta-feira das 08h00 às 12h00 e das 13h00 às 17h40</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__lower-container">
+      <hr class="footer__line">
+      <div class="footer__lower-wrapper">
+        <div class="footer__social-media-container">
+          <h2 class="footer__social-media-container-title">Fique em sintonia com a gente</h2>
+          <div class="footer__social-media-icons">
+            <a href="#"><i class="fa-brands fa-facebook footer__social-media-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram footer__social-media-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in footer__social-media-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter footer__social-media-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube footer__social-media-icon"></i></a>
+          </div>
+        </div>
+        <p class="footer__copyright">2022 Nerdweb - Extreme Hosting, todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./src/js/hamburger-menu.js"></script>
+  <script src="./src/js/header-sub-menu.js"></script>
+  <script src="./src/js/carousel.js"></script>
+</body>
+</html>
